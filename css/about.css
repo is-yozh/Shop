@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+  font-family: sans-serif;
+  font-size: 24px;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header{
+    background-image: url(../images/about_header_back.jpg);
+    background-size: cover;
+    grid-column: 1 / -1;
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    padding-bottom: 80px;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 100%;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li{
+    padding: 24px 48px;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: orange;
+    transition: 0.7s;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.about_company{
+    grid-column: 2 / -2;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_company h2{
+    max-width: 80%;
+    text-align: start;
+    margin-top: 50px;
+}
+
+.about_company .about_divider{
+    height: 5px;
+    width: 200px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.about_company .about_descr{
+    max-width: 80%;
+    text-align: start;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.categories{
+    grid-column: 2 / -2;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories h2{
+    margin-top: 50px;
+}
+
+.categories p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about_tiles{
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;  
+}
+
+.about_tiles .item {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+.about_tiles img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_tiles .item p{
+    margin-top: 15px;
+}
+
+.about_name {
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+    text-align: start;
+}
+
+.about_post {
+    font-size: 18px;
+    color: gray;
+    text-align: start;
+}
+
+footer{
+    margin-top: 75px;
+    grid-column: 1 / -1;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: black;
+    color: white;
+}
+
+footer p{
+    margin-top: 15px;
+}
+
+.social_contactacts{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.social_contactacts a:hover{
+    color: orange;
+    transition: 0.7s;
+}
